@@ -122,27 +122,32 @@ const NetworkingBoost = () => {
             whileHover={{ scale: 1.05 }}
           >
             <motion.span
+              className="text-white"
               animate={{
-                background: [
-                  "linear-gradient(45deg, #ffffff 0%, #915eff 50%, #ffffff 100%)",
-                  "linear-gradient(45deg, #915eff 0%, #ffffff 50%, #915eff 100%)",
-                  "linear-gradient(45deg, #ffffff 0%, #915eff 50%, #ffffff 100%)"
-                ],
+                textShadow: [
+                  "0 0 10px rgba(145, 94, 255, 0.6)",
+                  "0 0 20px rgba(145, 94, 255, 0.8)", 
+                  "0 0 10px rgba(145, 94, 255, 0.6)"
+                ]
               }}
               transition={{ duration: 3, repeat: Infinity }}
-              style={{
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent"
+              whileHover={{
+                color: "#915eff",
+                textShadow: "0 0 25px rgba(145, 94, 255, 1)"
               }}
             >
-              Networking 
+              Networking{" "}
             </motion.span>
             <motion.span 
               className="text-[#915eff] inline-block"
               animate={{
                 rotate: [0, 5, -5, 0],
-                scale: [1, 1.1, 1]
+                scale: [1, 1.1, 1],
+                textShadow: [
+                  "0 0 10px rgba(145, 94, 255, 0.5)",
+                  "0 0 20px rgba(145, 94, 255, 0.8)",
+                  "0 0 10px rgba(145, 94, 255, 0.5)"
+                ]
               }}
               transition={{
                 duration: 2,
